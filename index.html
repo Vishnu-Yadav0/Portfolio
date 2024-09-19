@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Vardhan - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #f7fafc, #edf2f7);
+    }
+
+    /* Welcome Slide-Up Animation */
+    #welcome {
+      animation: slideUp 2s ease-in-out;
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    /* Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Resume Button Animation */
+    .resume-button {
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .resume-button:hover {
+      background-color: #d4d4d4; /* Change this to your preferred color */
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Welcome Slide-Up -->
+  <section id="welcome" class="text-center bg-blue-600 text-white py-6 mb-8">
+    <h1 class="text-4xl font-bold">Welcome to My Portfolio!</h1>
+    <p class="text-lg mt-2">Explore my journey in AWS and DevOps</p>
+  </section>
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-black-600">VISHNU VARDHAN</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="text-gray-600 hover:text-blue-600">About</a></li>
+        <li><a href="#skills" class="text-gray-600 hover:text-blue-600">Skills</a></li>
+        <li><a href="#projects" class="text-gray-600 hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a></li><br>
+        </a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <!-- Profile Section -->
+    <section id="about" class="container mx-auto px-4 py-8 flex items-center">
+      <!-- Profile Photo -->
+      <div class="w-1/3 pr-4">
+        <img src="https://dev9381.s3.amazonaws.com/photo_2024-09-19_19-15-14.jpg" alt="Profile Photo" class="rounded-full shadow-md w-auto h-auro">
+      </div>
+      
+      <!-- Profile Summary -->
+      <div class="w-2/3">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg text-gray-600 mb-4">
+          Hello! I'm Vishnu Vardhan, an AWS DevOps enthusiast with a passion for cloud technologies and automation. I recently graduated and am excited to apply my knowledge in a professional setting. My journey has equipped me with skills in AWS, DevOps practices, and various programming languages, which I’m eager to leverage in real-world projects.
+        </p>
+        <p class="text-lg text-gray-600">
+          Outside of work, I enjoy exploring new technologies, working on personal projects, and continuously learning to stay ahead in this fast-paced industry. I’m always up for a challenge and excited to connect with like-minded professionals.
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="" class="mb-16 text-center">
+      <h2 class="text-4xl font-bold mb-4">AWS DevOps Enthusiast</h2>
+      <p class="text-xl text-gray-600 mb-8">
+        Fresh graduate passionate about cloud technologies and automation.
+        Eager to apply my knowledge of AWS and DevOps practices in a professional setting.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <!-- GitHub -->
+        <a href="https://github.com/Vishnu-Yadav0" target="_blank">
+          <button class="border border-gray-400 px-4 py-2 rounded-md flex items-center hover:bg-gray-100">
+            <i class="fab fa-github mr-2 h-4 w-4 text-gray-600"></i> GitHub
+          </button>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/vishnu-yadav-844eb/" target="_blank">
+          <button class="border border-gray-400 px-4 py-2 rounded-md flex items-center hover:bg-gray-100">
+            <i class="fab fa-linkedin mr-2 h-4 w-4 text-gray-600"></i> LinkedIn
+          </button>
+        </a>
+
+        <!-- Resume -->
+        <a href="https://dev9381.s3.amazonaws.com/Vishnu_Resume.pdf" target="_blank">
+          <button class="border border-gray-400 px-4 py-2 rounded-md flex items-center hover:bg-gray-100 resume-button" id="resume">
+            <i class="fas fa-file-alt mr-2 h-4 w-4 text-gray-600"></i> Resume
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <div class="flex justify-between items-center">
+            <h3 class="text-sm font-medium">AWS</h3>
+            <i class="fas fa-cloud h-4 w-4 text-blue-600"></i>
+          </div>
+          <p class="text-xs text-gray-600 mt-2">EC2, S3, Lambda, CloudFormation, <br>Load Balancing, Auto Scaling, API Gateway, <br> Route 53, VPC, IAM, CloudTrail,
+            CodeStar, CodeCommit, CodeBuild, CodeArtifact, CodeDeploy, CodePipeline, AWS EBS, AWS EFS, RDS, DynamoDB, Reddis, Systems Manager,
+            Certification Manager, AWS CloudFormation, AWS Cloud Watch, SDK Boto3</p>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <div class="flex justify-between items-center">
+            <h3 class="text-sm font-medium">DevOps</h3>
+            <i class="fas fa-server h-4 w-4 text-blue-600"></i>
+          </div>
+          <p class="text-xs text-gray-600 mt-2">CI/CD, Docker, Kubernetes, Ansible, SonarQube, JFrog, Linux </p>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <div class="flex justify-between items-center">
+            <h3 class="text-sm font-medium">Programming</h3>
+            <i class="fas fa-code h-4 w-4 text-blue-600"></i>
+          </div>
+          <p class="text-xs text-gray-600 mt-2">Python, Bash, YAML, HCL</p>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <div class="flex justify-between items-center">
+            <h3 class="text-sm font-medium">Tools</h3>
+            <i class="fas fa-terminal h-4 w-4 text-blue-600"></i>
+          </div>
+          <p class="text-xs text-gray-600 mt-2">Git, Jenkins, Terraform, Maven, Tomcat, Apache </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">AWS Infrastructure Automation with CloudFormation and Terraform</h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Automated the provisioning and management of cloud resources using AWS CloudFormation and Terraform.</li>
+            <li>Ensured consistency and repeatability in infrastructure deployment.</li>
+            <li>Deployed resources such as EC2 instances, S3 buckets, and VPCs.</li>
+            <li>Followed infrastructure as code (IaC) best practices.</li>
+            <li>Created a CloudFormation template to deploy a scalable web application infrastructure on AWS, including VPC, EC2 instances, and an Application Load Balancer.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">Static Web Hosting Using S3 Buckets</h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Hosted a static website using Amazon S3, leveraging its capabilities for serving static content such as HTML, CSS, and JavaScript.</li>
+            <li>Configured the S3 bucket for static website hosting, including setting up bucket policies and permissions to ensure public access.</li>
+            <li>Deployed website files to the S3 bucket, providing a scalable and cost-effective solution for hosting static websites.</li>
+          </ul>
+        </div>
+    
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">Serverless Angular Web Application Hosting Using Route53</h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Hosted an Angular web application in a serverless environment using AWS services, enabling scalable and cost-effective deployment.</li>
+            <li>Utilized S3 buckets for storing the Angular application files, ensuring scalable and reliable storage.</li>
+            <li>Deployed the application to a custom domain using AWS Route 53 for domain management and DNS routing.</li>
+            <li>Integrated AWS CloudFront as a Content Delivery Network (CDN) to enhance the application's performance and deliver content quickly to users across the globe.</li>
+            <li>Connected the Angular application to a backend powered by AWS DynamoDB, ensuring efficient and scalable data storage and retrieval.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">Containerized Microservices</h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Developed a microservices application using Docker containers, enabling modularity and scalability of the application.</li>
+            <li>Containerized each microservice to ensure consistent and isolated environments for development and deployment.</li>
+            <li>Deployed the application on a local Kubernetes cluster using Minikube, managing container orchestration and service scaling.</li>
+            <li>Technologies Used: Docker, Kubernetes, Minikube.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">Continuous Integration and Continuous Deployment (CI/CD) Pipeline implementation for Java Springboot Application </h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Automated CI/CD pipeline for a Java Springboot application using Jenkins, streamlining the build, test, and deployment processes.</li>
+            <li>Managed the build process with Maven, automating compilation, testing, and packaging of the Java application.</li>
+            <li>Integrated SonarQube into the pipeline for automated code quality checks and static code analysis, ensuring high-quality code and adherence to best practices.</li>
+            <li>Configured JFrog Artifactory as the repository for storing and managing build artifacts, including Java .war files, for efficient version control and distribution.</li>
+            <li>Deployed the Java Springboot application to Tomcat using automated deployment scripts, facilitating consistent and reliable application releases.</li>
+          </ul>
+        </div>
+        <div class="bg-white shadow-md p-4 rounded-md">
+          <h3 class="font-bold">Containerized Django Web Application with Docker Compose </h3>
+          <ul class="list-disc pl-5 text-sm text-gray-600 mt-2">
+            <li>Containerized a Django web application using Docker and Docker Compose for consistent development and deployment environments.</li>
+            <li>Created Dockerfiles for both the Django application and PostgreSQL database to ensure isolated and reproducible environments.</li>
+            <li>Configured Docker Compose to manage multi-container deployments, handling service dependencies, environment variables, and database migrations.</li>
+            <li>Successfully deployed the application locally, demonstrating seamless integration and communication between the Django app and PostgreSQL database.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Certification Section -->
+    <section id="certifications" class="mb-16">
+      <h2 class="text-3xl font-bold mb-8 text-center">Certifications & Training</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white shadow-md p-4 rounded-md">
+              <div class="flex justify-between items-center mb-4">
+                  <h3 class="font-bold">Certifications</h3>
+                  <i class="fas fa-book h-4 w-4 text-blue-600"></i>
+              </div>
+              <ul class="list-disc pl-5 text-sm text-gray-600">
+                  <li>PCAP Certificate Programming Essentials in Python</li>
+                  <li>Python Certificate From Kaggle</li>
+                  <li>SQL Advanced Certification From Hackerrank</li>
+                  <li>Python Data Structures Certificate From Coursera</li>
+                  <li>AWS DevOps Training Completion Certificate from CloudBinary Institute</li>
+              </ul>
+          </div>
+
+          <div class="bg-white shadow-md p-4 rounded-md">
+              <div class="flex justify-between items-center mb-4">
+                  <h3 class="font-bold">Training</h3>
+                  <i class="fas fa-graduation-cap h-4 w-4 text-blue-600"></i>
+              </div>
+              <p class="text-sm text-gray-600">
+                  Enrolled in a 4-month AWS DevOps Program to enhance Cloud Computing Skills and upskill DevOps Skills. Successfully completed.
+              </p>
+          </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+      <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+      <p class="text-xl text-gray-600 mb-8">
+        I'm currently looking for new opportunities. If you'd like to discuss potential collaborations or just want to say hi, feel free to reach out!
+      </p>
+      
+      <a href="mailto:Vishyadav.844@gmail.com" class="inline-block">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center justify-center hover:bg-blue-700">
+          <i class="fas fa-envelope mr-2 h-4 w-4"></i> Contact Me
+        </button>
+      </a>
+      
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 mt-16">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2024 Vishnu Vardhan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
